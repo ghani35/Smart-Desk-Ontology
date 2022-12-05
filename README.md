@@ -12,5 +12,10 @@ It is build by defining **Entities, data properties, object properties and SWRL 
 
 ## Entities
 Here is the list of classes and sub-classes used in this ontology 
-  1-  DeskComponent:  The component of the smart desk which are Chair and Desk
-  2-  DeskFeatures: The features provided (actions done) by the smart desk which are executed based on a specific condition. They are codded by SWRL rules.
+  * DeskComponent:  The component of the smart desk which are Chair and Desk 
+  * DeskFeatures: The features provided (actions done) by the smart desk which are executed based on a specific condition. They are codded by SWRL rules.
+  * DeskSuggestion: A list of smart suggestions by the desk 
+  * Device: They are the hardware (different from sensors) of the desk 
+  
+
+
