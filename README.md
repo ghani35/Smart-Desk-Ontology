@@ -49,6 +49,7 @@ Here is the list of classes and sub-classes used in this ontology
 ![image](https://user-images.githubusercontent.com/91313196/205525180-f35ed120-fb79-4ee0-aa56-989a9fd3f895.png)
 
 ##SWRL rules 
+
 ![image](https://user-images.githubusercontent.com/91313196/205525190-59820b71-7c8d-4572-b299-499b9739e759.png)
 
     
