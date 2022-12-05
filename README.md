@@ -16,6 +16,12 @@ Here is the list of classes and sub-classes used in this ontology
   * DeskFeatures: The features provided (actions done) by the smart desk which are executed based on a specific condition. They are codded by SWRL rules.
   * DeskSuggestion: A list of smart suggestions by the desk 
   * Device: They are the hardware (different from sensors) of the desk 
+  * Person: is the user 
+  * PersonActivity: The user activities recognized by the desk based on specific conditions codded in SWRL
+  * Sensor: A set of sensors 
+ ![image](https://user-images.githubusercontent.com/91313196/205524606-5062736b-6ab4-4b2c-a849-3e295b1579b7.png)
+
+
   
 
 
