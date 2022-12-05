@@ -19,7 +19,7 @@ Here is the list of classes and sub-classes used in this ontology
   * Person: is the user 
   * PersonActivity: The user activities recognized by the desk based on specific conditions codded in SWRL
   * Sensor: A set of sensors 
- ![image](https://user-images.githubusercontent.com/91313196/205524606-5062736b-6ab4-4b2c-a849-3e295b1579b7.png)
+  * ![image](https://user-images.githubusercontent.com/91313196/205524606-5062736b-6ab4-4b2c-a849-3e295b1579b7.png)
 
 
   
