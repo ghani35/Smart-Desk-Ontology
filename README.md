@@ -35,7 +35,21 @@ Here is the list of classes and sub-classes used in this ontology
  * isUsing: a Person is using a Desk component 
  * personIsDoing: a Person is doing a PersonActivity 
 
-![image](https://user-images.githubusercontent.com/91313196/205524937-61743f39-6ef9-43f6-af56-8c1f8171b61f.png)
+![image](https://user-images.githubusercontent.com/91313196/205525087-76ce391b-155a-411e-86fd-41b3e8168af5.png)
+
+## Data Properties 
+ * deviceState: Represents either the Device is On or Off by an integer value (0 if off) and (1 if on)
+ * hasFitnessData: Assigns an integer value “number of minutes” the person has been standing up or sitting down from the starting of the day The data is assumed to be collected from a smart watch 
+ * hasLightLevel: Assigns a string to the Sensor_LDR (dark, soft or light)
+ * hasSentence: Assigns the sentence said by the user to the voice_recognition sensor
+ * hasTemperature: Assign the temperature of the room (integer) to the temperature sensor 
+ * hasTime: Assigns a time (integer) to the Digital clock Device
+ * sensorState: Represents either the Device is On or Off by an integer value (0 if off) and (1 if on)
+
+![image](https://user-images.githubusercontent.com/91313196/205525180-f35ed120-fb79-4ee0-aa56-989a9fd3f895.png)
+
+##SWRL rules 
+![image](https://user-images.githubusercontent.com/91313196/205525190-59820b71-7c8d-4572-b299-499b9739e759.png)
 
     
 
