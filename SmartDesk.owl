@@ -1,0 +1,2351 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#"
+     xml:base="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-29="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasDevice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasDevice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isSensorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isModeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDoneByPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDoneByPerson">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isModeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isModeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isNotUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isNotUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isSensorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isSensorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasFitnessData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasFitnessData">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasLightLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasLightLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSentence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSentence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorVoiceRecognition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSittingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSittingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasFitnessData"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasStandingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasStandingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasFitnessData"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasVolum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasVolum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#sensorState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#sensorState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasDevice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceAir_Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceAir_Condition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceCamera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceCamera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isDeviceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceLamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceLamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceMicrophone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceMicrophone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DinnerTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DinnerTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#InMeeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#InMeeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsSitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsSitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsStanding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsStanding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LaunchTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LaunchTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightOff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightOff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightSoft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightSoft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightStrong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightStrong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isSensorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorVoiceRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorVoiceRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SitDown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SitDown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#StandUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#StandUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffAirCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffAirCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffHeater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffHeater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnAirCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnAirCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnHeater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnHeater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Camera1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Camera1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceCamera"/>
+        <deviceState rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</deviceState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Digital_clock1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Digital_clock1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock"/>
+        <hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Ghani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Ghani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+        <isUsing rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair1"/>
+        <isUsing rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Having_meeting1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Having_meeting1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#InMeeting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Heater1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Heater1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+        <deviceState rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</deviceState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Lamp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Lamp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceLamp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Microphone1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Microphone1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceMicrophone"/>
+        <deviceState rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</deviceState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor_Ldr_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor_Ldr_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor"/>
+        <hasLightLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft</hasLightLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensorfiteness1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensorfiteness1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData"/>
+        <hasSittingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasSittingTime>
+        <hasStandingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasStandingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sperker1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sperker1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker"/>
+        <deviceState rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</deviceState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Tempreture1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Tempreture1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+        <hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasTemperature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffaircond1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffaircond1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffAirCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffheater1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffheater1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffHeater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonaircond1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonaircond1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnAirCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonheater1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonheater1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnHeater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#VoiceRecognition1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#VoiceRecognition1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorVoiceRecognition"/>
+        <hasSentence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasSentence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#air_condition1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#air_condition1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceAir_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_dinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_dinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DinnerTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_launch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_launch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LaunchTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_sitting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_sitting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsSitting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_standing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_standing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsStanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_off -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_off">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_soft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_soft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightSoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_strong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_strong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightStrong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#sit_down_suggestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#sit_down_suggestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SitDown"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#stand_up_suggestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#stand_up_suggestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#StandUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskComponent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskFeatures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskSuggestion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Device"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#PersonActivity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightRegulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffAirCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffHeater"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnAirCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnHeater"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceAir_Condition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceCamera"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceLamp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceMicrophone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#InMeeting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsSitting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#IsStanding"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightOff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightSoft"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#LightStrong"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffAirCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOffHeater"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnAirCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#TurnOnHeater"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suggestion_dinnerTime</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_dinner"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_turnOff_heater</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffheater1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_turnOn_airconditioner</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonaircond1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_turnOff_airconditioner</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnoffaircond1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_turnOn_heater</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceHeater"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#h"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTemperature"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorTemperature"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Turnonheater1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_lightoff</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasLightLevel"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_off"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature_lightsoft</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasLightLevel"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorLdr_Light_sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#light_soft"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feuture_deskdown</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSentence"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorVoiceRecognition"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeskDown1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suggestion_standUp</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasSittingTime"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#stand_up_suggestion"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suggestion_sitDown</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasStandingTime"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#SensorFitnesData"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#sit_down_suggestion"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_meeting</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceMicrophone"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceSpeaker"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#s"/>
+                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceCamera"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#y"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deviceState"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#m"/>
+                                                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Having_meeting1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_standing</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isNotUsing"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_standing"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_sitting</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Chair"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#personIsDoing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#is_sitting"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suggestion_lanchTime</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#isUsing"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#Desk"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#DeviceDigital_clock"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#deskSuggestsTo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ideapadgaming3/ontologies/2022/10/untitled-ontology-29#have_launch"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
